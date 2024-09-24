@@ -1,0 +1,70 @@
+body {
+    font-family: 'Courier New', monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('imagem/img.jfif');
+    background-size: cover; /* Cobre toda a tela */
+    color: #00ff00; 
+    margin: 0;
+    overflow: hidden; /* Evita rolagem */
+}
+
+h1, p {
+    text-shadow: 0 0 10px rgba(0, 255, 0, 0.8);
+}
+
+#quiz-container {
+    background: rgba(0, 0, 0, 0.8); /*semi-transparente */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.5);
+    text-align: center;
+    width: 300px;
+    position: relative; /*animação */
+}
+
+#question-container {
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #1a1a1a; /* Fundo dos botões */
+    color: #00ff00; /* Texto verde neon */
+    border: 2px solid #00ff00; /* Borda verde neon */
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+button:hover {
+    background-color: #00ff00; /* Fundo verde ao passar o mouse */
+    color: #1a1a1a; /* Texto escuro ao passar o mouse */
+    transform: scale(1.05); /* Efeito de aumento */
+    box-shadow: 0 0 20px rgba(0, 255, 0, 1);
+}
+
+#answers button {
+    display: block;
+    width: 100%;
+    margin: 5px 0;
+    padding: 10px;
+    background-color: #1a1a1a;
+    border: 2px solid #00ff00;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#answers button:hover {
+    background-color: #00ff00;
+    color: #1a1a1a;
+    transform: scale(1.05);
+}
+
+#score {
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 1.2em;
+}

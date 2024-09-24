@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Perguntas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="quiz-container">
+        <h1>Jogo de Perguntas</h1>
+        <div id="start-screen">
+            <button id="start-button" onclick="startQuiz()">Iniciar Quiz</button>
+        </div>
+        <div id="question-container" style="display: none;">
+            <p id="question"></p>
+            <div id="answers"></div>
+            <button id="next-button" onclick="nextQuestion()" style="display: none;">Próxima</button>
+        </div>
+        <div id="result-screen" style="display: none;">
+            <p id="score"></p>
+            <p id="hint"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
